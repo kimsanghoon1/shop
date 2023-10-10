@@ -17,6 +17,12 @@
                             <v-list-item-subtitle>
                                 DevlieryId :  {{item.devlieryId }}
                             </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                InventoryId :  {{item.inventoryId }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                Stock :  {{item.stock }}
+                            </v-list-item-subtitle>
                         </v-list-item-content>
 
                         <v-list-item-action>
@@ -68,6 +74,10 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['id'] = arr[4]; 
+                    
+                    
+                    
+                    
                     
                     
                     

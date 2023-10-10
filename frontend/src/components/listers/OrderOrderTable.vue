@@ -68,6 +68,8 @@
                 [
                     { text: "id", value: "id" },
                     { text: "devlieryId", value: "devlieryId" },
+                    { text: "inventoryId", value: "inventoryId" },
+                    { text: "stock", value: "stock" },
                 ],
             order : [],
             newValue: {},
@@ -86,6 +88,8 @@
 
             this.newValue = {
                 'devlieryId': '',
+                'inventoryId': '',
+                'stock': '',
             }
         },
         methods: {

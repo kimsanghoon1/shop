@@ -110,6 +110,8 @@
             
             me.newValue = {
                 'devlieryId': '',
+                'inventoryId': '',
+                'stock': '',
             }
         },
         methods:{

@@ -17,6 +17,8 @@
 
         <v-card-text>
             <String label="DevlieryId" v-model="value.devlieryId" :editMode="editMode" :inputUI="''"/>
+            <String label="InventoryId" v-model="value.inventoryId" :editMode="editMode" :inputUI="''"/>
+            <String label="Stock" v-model="value.stock" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions>
