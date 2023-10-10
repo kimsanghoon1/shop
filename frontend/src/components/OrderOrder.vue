@@ -16,8 +16,6 @@
         </v-card-title >        
 
         <v-card-text>
-            <String label="Customer" v-model="value.customer" :editMode="editMode" :inputUI="''"/>
-            <String label="Product" v-model="value.product" :editMode="editMode" :inputUI="''"/>
             <String label="DevlieryId" v-model="value.devlieryId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 

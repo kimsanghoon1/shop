@@ -109,8 +109,6 @@
             me.values = temp.data._embedded.orders;
             
             me.newValue = {
-                'customer': '',
-                'product': '',
                 'devlieryId': '',
             }
         },
