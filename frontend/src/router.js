@@ -7,11 +7,17 @@ Vue.use(Router);
 
 import OrderOrderManager from "./components/listers/OrderOrderCards"
 import OrderOrderDetail from "./components/listers/OrderOrderDetail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
 
 import SupportingDeliveryManager from "./components/listers/SupportingDeliveryCards"
 import SupportingDeliveryDetail from "./components/listers/SupportingDeliveryDetail"
 import SupportingInventoryManager from "./components/listers/SupportingInventoryCards"
 import SupportingInventoryDetail from "./components/listers/SupportingInventoryDetail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
+import Manager from "./components/listers/Cards"
+import Detail from "./components/listers/Detail"
 
 
 export default new Router({
@@ -27,6 +33,16 @@ export default new Router({
                 path: '/orders/orders/:id',
                 name: 'OrderOrderDetail',
                 component: OrderOrderDetail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
             },
 
             {
@@ -48,6 +64,26 @@ export default new Router({
                 path: '/supportings/inventories/:id',
                 name: 'SupportingInventoryDetail',
                 component: SupportingInventoryDetail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
+            },
+            {
+                path: '//',
+                name: 'Manager',
+                component: Manager
+            },
+            {
+                path: '///:id',
+                name: 'Detail',
+                component: Detail
             },
 
 

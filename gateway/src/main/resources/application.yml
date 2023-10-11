@@ -12,11 +12,11 @@ spring:
         - id: order
           uri: http://localhost:8082
           predicates:
-            - Path=/orders/**, 
+            - Path=/orders/**, /undefined/**, 
         - id: supporting
-          uri: http://localhost:8083
+          uri: http://localhost:0
           predicates:
-            - Path=/deliveries/**, /inventories/**, 
+            - Path=/deliveries/**, /inventories/**, /undefined/**, /undefined/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -44,11 +44,11 @@ spring:
         - id: order
           uri: http://order:8080
           predicates:
-            - Path=/orders/**, 
+            - Path=/orders/**, /undefined/**, 
         - id: supporting
           uri: http://supporting:8080
           predicates:
-            - Path=/deliveries/**, /inventories/**, 
+            - Path=/deliveries/**, /inventories/**, /undefined/**, /undefined/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:

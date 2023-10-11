@@ -45,6 +45,17 @@
                         Order
                     </v-list-item>
 
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
 
                     <v-list-item
                         class="px-2"
@@ -66,6 +77,28 @@
                         style="font-weight:700;"
                     >
                         Inventory
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
+                    </v-list-item>
+
+                    <v-list-item
+                        class="px-2"
+                        key=""
+                        to="//"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        
                     </v-list-item>
 
 
@@ -155,6 +188,13 @@ export default {
                 ImageUrl: '',
             },
             { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
                 title: 'Delivery', 
                 description: '', 
                 key: 'deliveries', 
@@ -166,6 +206,20 @@ export default {
                 description: '', 
                 key: 'inventories', 
                 route: '/supportings/inventories',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: '', 
+                description: '', 
+                key: '', 
+                route: '//',
                 ImageUrl: '',
             },
             

@@ -8,12 +8,6 @@
             <div>
                 <String label="DevlieryId" v-model="item.devlieryId" :editMode="editMode" @change="change" />
             </div>
-            <div>
-                <String label="InventoryId" v-model="item.inventoryId" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="Stock" v-model="item.stock" :editMode="editMode" @change="change" />
-            </div>
         </v-card-text>
 
         <v-card-actions>

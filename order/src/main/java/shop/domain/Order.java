@@ -21,10 +21,6 @@ public class Order {
 
     private String devlieryId;
 
-    private String inventoryId;
-
-    private String stock;
-
     @PostPersist
     public void onPostPersist() {
         OrderPlaced orderPlaced = new OrderPlaced(this);

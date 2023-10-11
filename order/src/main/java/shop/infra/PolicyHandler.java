@@ -20,6 +20,9 @@ public class PolicyHandler {
     @Autowired
     OrderRepository orderRepository;
 
+    @Autowired
+    Repository Repository;
+
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
 }

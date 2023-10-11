@@ -6,8 +6,6 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import shop.SupportingApplication;
-import shop.domain.InventoryDecreased;
-import shop.domain.InventoryIncreased;
 
 @Entity
 @Table(name = "Inventory_table")
@@ -18,15 +16,6 @@ public class Inventory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    @PostPersist
-    public void onPostPersist() {
-        InventoryDecreased inventoryDecreased = new InventoryDecreased(this);
-        inventoryDecreased.publishAfterCommit();
-
-        InventoryIncreased inventoryIncreased = new InventoryIncreased(this);
-        inventoryIncreased.publishAfterCommit();
-    }
 
     public static InventoryRepository repository() {
         InventoryRepository inventoryRepository = SupportingApplication.applicationContext.getBean(
