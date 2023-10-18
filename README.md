@@ -33,15 +33,12 @@ mvn spring-boot:run
 ## Test by API
 - order
 ```
- http :8088/orders id="id" devlieryId="devlieryId" inventoryId="inventoryId" stock="stock" ="" ="" ="" 
- http :8088/ 
+ http :8088/orders id="id" devlieryId="devlieryId" inventoryId="inventoryId" stock="stock" 
 ```
 - supporting
 ```
- http :8088/deliveries id="id" 
+ http :8088/deliveries id="id" itemName="itemName" 
  http :8088/inventories id="id" 
- http :8088/ 
- http :8088/ 
 ```
 
 

@@ -16,6 +16,7 @@
         </v-card-title >        
 
         <v-card-text>
+            <String label="ItemName" v-model="value.itemName" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions>

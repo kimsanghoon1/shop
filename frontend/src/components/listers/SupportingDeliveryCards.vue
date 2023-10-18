@@ -109,6 +109,7 @@
             me.values = temp.data._embedded.deliveries;
             
             me.newValue = {
+                'itemName': '',
             }
         },
         methods:{

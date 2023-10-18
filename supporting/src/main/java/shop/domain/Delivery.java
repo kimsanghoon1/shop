@@ -6,6 +6,8 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import shop.SupportingApplication;
+import shop.domain.DeliveryReturned;
+import shop.domain.DeliveryStarted;
 
 @Entity
 @Table(name = "Delivery_table")
@@ -16,6 +18,17 @@ public class Delivery {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    private String itemName;
+
+    @PostPersist
+    public void onPostPersist() {
+        DeliveryStarted deliveryStarted = new DeliveryStarted(this);
+        deliveryStarted.publishAfterCommit();
+
+        DeliveryReturned deliveryReturned = new DeliveryReturned(this);
+        deliveryReturned.publishAfterCommit();
+    }
 
     public static DeliveryRepository repository() {
         DeliveryRepository deliveryRepository = SupportingApplication.applicationContext.getBean(

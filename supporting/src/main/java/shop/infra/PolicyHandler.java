@@ -23,12 +23,6 @@ public class PolicyHandler {
     @Autowired
     InventoryRepository inventoryRepository;
 
-    @Autowired
-    Repository Repository;
-
-    @Autowired
-    Repository Repository;
-
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
 

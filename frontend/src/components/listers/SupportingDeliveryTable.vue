@@ -67,6 +67,7 @@
             headers: 
                 [
                     { text: "id", value: "id" },
+                    { text: "itemName", value: "itemName" },
                 ],
             delivery : [],
             newValue: {},
@@ -84,6 +85,7 @@
             this.values = temp.data._embedded.deliveries;
 
             this.newValue = {
+                'itemName': '',
             }
         },
         methods: {
